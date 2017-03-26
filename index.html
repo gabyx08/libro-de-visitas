@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+    <title>Libro de Visitas</title>
+    <style type="text/css">
+        body{
+            background-image: url("assets/images/fondo.jpg");
+            font-family: Courier;
+        }
+        h1{
+           background-image: url("assets/images/tit.jpg");
+           font-size: 60px;
+           color: white;
+           text-align: center;
+        }
+        h2{
+            color: #258391;
+            font-size: 25px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Comentarios</h1>
+    <div id="mostrarComentario">
+        
+    </div>
+    <div align="center">
+        <h2>Crear Comentario</h4>
+        <button type="button" onclick="tamanoTexto(1);">Texto Grande</button>
+        <button type="button" onclick="tamanoTexto(2);">Texto Mediano</button>
+        <button type="button" onclick="tamanoTexto(3);">Texto Chico</button>
+        <button type="button" onclick="cambiarColor(1);">Color de Texto</button>
+        <button type="button" onclick="cambiarColor(2);">Color de Fondo</button>
+        <button type="button" onclick="alinearTexto(1);">Alinear Izquierda</button>
+        <button type="button" onclick="alinearTexto(2);">Centrar</button>
+        <button type="button" onclick="alinearTexto(3);">Alinear a la Derecha</button>
+        <button type="button" onclick="crearLista();">Crear Lista</button>
+        <textarea name="name" rows="8" cols="100" id="escribirComentario" oninput="mostrar()"></textarea>
+    </div>
+    <hr>
+    <h2>Contenido</h3>
+    <p id="comentarioPrevio"></p>
+    <button type="button" name="enviar" onclick="enviar();">Enviar</button>
+    <script type="text/javascript" src="assets/js/js.js"></script>
+  </body>
+</html>
